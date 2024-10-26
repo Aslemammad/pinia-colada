@@ -18,6 +18,7 @@ on:
       - 'playground/**'
       - 'packages/nuxt/playground/**'
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -46,4 +47,4 @@ jobs:
         run: pnpm build:plugins
 
       - name: Release
-        run: pnpm dlx pkg-pr-new publish --compact --pnpm . './plugins/*' ./nuxt
+        run: pnpm dlx pkg-pr-new@https://bd9ae1c9.stackblitz-cr.pages.dev/stackblitz-labs/pkg.pr.new/pkg-pr-new@266 publish --compact --pnpm . './plugins/*' ./nuxt

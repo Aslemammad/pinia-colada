@@ -18,7 +18,6 @@ on:
       - 'playground/**'
       - 'packages/nuxt/playground/**'
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
